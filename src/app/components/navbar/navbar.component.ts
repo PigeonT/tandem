@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthserviceService} from '../../shared/authservice.service';
 
 @Component({
   selector: 'tp-navbar',
@@ -11,5 +12,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  getLogo(): string {
+    return '../../../assets/img/logo.png';
+  }
 }

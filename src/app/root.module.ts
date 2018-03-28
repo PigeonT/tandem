@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './root.component';
-import { NavbarComponent } from './navbar/navbar.component';
-
+import { ServiceModule } from './shared/root.module';
+import { ComponentModule } from './components/root.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ServiceModule,
+    ComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
