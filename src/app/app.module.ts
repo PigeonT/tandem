@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import { AppComponent } from './root.component';
-import { ServiceModule } from './shared/root.module';
-import { ComponentModule } from './components/root.module';
+import { AppComponent } from './app.component';
+import { ServiceModule } from './shared/shared.module';
+import { ComponentModule } from './components/component.module';
 import {TandemComponent} from './components/tandem/tandem.component';
 
 @NgModule({
