@@ -7,6 +7,8 @@ import { TandemComponent } from './tandem/tandem.component';
 import { MeetupComponent } from './meetup/meetup.component';
 import { TeachLanguageComponent } from './teach-language/teach-language.component';
 import { LearnLanguageComponent } from './learn-language/learn-language.component';
+import { RouterOutlet } from '@angular/router';
+import {AppRoutingModule} from '../app-routing.module';
 
 
 @NgModule({
@@ -19,10 +21,15 @@ import { LearnLanguageComponent } from './learn-language/learn-language.componen
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule
   ],
   exports: [
-    NavbarComponent
-  ],
+    RouterOutlet,
+    NavbarComponent,
+    TandemComponent,
+    MeetupComponent,
+    TeachLanguageComponent,
+    LearnLanguageComponent  ],
   providers: [],
   bootstrap: []
 })
