@@ -1,35 +1,32 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
 
-import { NavbarComponent } from './navbar/navbar.component';
-import { TandemComponent } from './tandem/tandem.component';
-import { MeetupComponent } from './meetup/meetup.component';
-import { TeachLanguageComponent } from './teach-language/teach-language.component';
-import { LearnLanguageComponent } from './learn-language/learn-language.component';
-import { RouterOutlet } from '@angular/router';
+import {NavbarComponent} from './navbar/navbar.component';
+import {RouterOutlet} from '@angular/router';
 import {AppRoutingModule} from '../app-routing.module';
+import {MeetupModule} from './meetup/meetup.module';
+import {TeachLanguageModule} from './teach-language/teach-language.module';
+import {LearnLanguageModule} from './learn-language/learn-language.module';
+import {TandemModule} from './tandem/tandem.module';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    TandemComponent,
-    MeetupComponent,
-    TeachLanguageComponent,
-    LearnLanguageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MeetupModule,
+    TeachLanguageModule,
+    LearnLanguageModule,
+    TandemModule
   ],
   exports: [
     RouterOutlet,
     NavbarComponent,
-    TandemComponent,
-    MeetupComponent,
-    TeachLanguageComponent,
-    LearnLanguageComponent  ],
+  ],
   providers: [],
   bootstrap: []
 })
