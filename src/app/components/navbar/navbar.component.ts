@@ -13,6 +13,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
   getLogo(): string {
-    return '../../../assets/img/logo.png';
+    return '../../../assets/icon/icon.png';
   }
 }
