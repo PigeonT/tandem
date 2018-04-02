@@ -3,21 +3,24 @@
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="language_teaching" datatype="html">
-        <source>Sprache lernen mit Muttersprachler</source>
+        <source>learn language</source>
+        <target>learn language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="language_learning" datatype="html">
-        <source>Muttersprachler lehren</source>
+        <source>teach language</source>
+        <target>teach language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tandem_finding" datatype="html">
-        <source>Tandem suchen</source>
+        <source>find tandem</source>
+        <target>find tandem</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">17</context>
@@ -25,20 +28,24 @@
       </trans-unit>
       <trans-unit id="meetup" datatype="html">
         <source>Meetup</source>
+        <target>Meetup</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="sign_in" datatype="html">
-        <source>Anmelden</source>
+        <source>sign in</source>
+        <target>sign in</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="sign_up" datatype="html">
-        <source>Registrieren</source>
+        <source>sign up</source>
+        <target>sign up</target>
+        <target>Registrieren</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/navbar/navbar.component.ts</context>
           <context context-type="linenumber">30</context>

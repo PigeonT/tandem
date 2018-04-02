@@ -8,13 +8,13 @@
   <div class="collapse navbar-collapse col-7" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/learnlanguage" i18n="@@language_teaching">Sprache lernen mit Muttersprachler</a>
+        <a class="nav-link" routerLink="/learnlanguage" i18n="@@language_teaching">learn language</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/teachlanguage" i18n="@@language_learning">Muttersprachler lehren</a>
+        <a class="nav-link" routerLink="/teachlanguage" i18n="@@language_learning">teach language</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/tandem" i18n="@@tandem_finding">Tandem suchen</a>
+        <a class="nav-link" routerLink="/tandem" i18n="@@tandem_finding">find tandem</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="meetup" i18n="@@meetup">Meetup</a>
@@ -24,14 +24,19 @@
   <div class="collapse navbar-collapse justify-content-end col-3" id="authNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="#" i18n="@@sign_in">Anmelden</a>
+        <a class="nav-link" routerLink="#" i18n="@@sign_in">sign in</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="#" i18n="@@sign_up">Registrieren</a>
+        <a class="nav-link" routerLink="#" i18n="@@sign_up">sign up</a>
       </li>
     </ul>
   </div>
-  <a class="navbar-brand text-center col-sm-1" href="#">
-    <span class="octicon octicon-globe"></span>
-  </a>
+  <div class="dropdown">
+    <button class="btn bt-light dropdown-toggle" type="button" id="languageSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="octicon octicon-globe"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="languageSelection">
+      <a *ngFor="let language of languages" class="dropdown-item" (click)="onLanguageSelection(language)">{{language}}</a>
+    </div>
+  </div>
 </nav>
